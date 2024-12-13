@@ -1,8 +1,13 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { FiShoppingCart } from "react-icons/fi";
 import { IoIosHeartEmpty } from "react-icons/io";
+import { cartandWishContext } from '../App';
 
-const ProductItems = ({ item, handleWishList, handleAddToCart }) => {
+
+
+// handleWishList, handleAddToCart
+const ProductItems = ({ item }) => {
+  const{handleAddToCart,handleAddToWishList}=useContext(cartandWishContext)
   return (
     <div className="product" key={item.id}>
       <div className="product-img">
@@ -14,7 +19,7 @@ const ProductItems = ({ item, handleWishList, handleAddToCart }) => {
         <div className="product-details-wish">
           <IoIosHeartEmpty
             className="product-icon"
-            onClick={() => handleWishList(item)}
+            onClick={() => handleAddToWishList(item)}
           />
         </div>
         <div className="product-details-cart">

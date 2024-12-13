@@ -1,12 +1,16 @@
-import React, { useEffect } from 'react';
+import React, { useContext, useEffect } from 'react';
 import { Link } from 'react-router-dom'
-const WishList = ({ wishList, setWishList }) => {
+import { cartandWishContext } from '../App';
+
+//  value passed as props{ wishList, setWishList }
+const WishList = () => {
 
   const removeFilter = (item) => {
     setWishList(wishList.filter((wishlist) => (
       wishlist.id !== item.id)
     ))
   }
+   const {wishList,setWishList}=useContext(cartandWishContext)
   return (
     <>
       <div className='wishlist-heading'> My  WishList</div>

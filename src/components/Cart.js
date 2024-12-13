@@ -1,8 +1,12 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import { Link } from "react-router-dom";
 import { FiShoppingBag } from "react-icons/fi";
+import { cartandWishContext } from "../App";
 
-const Cart = ({ cartList, setCartList }) => {
+// { cartList, setCartList }
+const Cart = () => {
+
+  const {cartList, setCartList}=useContext(cartandWishContext)
   const [subtotal, setSubtotal] = useState(0);
   const [tax, setTax] = useState(0);
   const [shipping, setShipping] = useState(50);

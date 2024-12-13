@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { createContext, useEffect, useState } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './assert/sass/main.scss';
 import Header from './components/Header';
@@ -6,7 +6,10 @@ import Home from './components/Home';
 import Product from './components/Product';
 import WishList from './components/WishList';
 import Cart from './components/Cart';
-import Checkout from './components/Checkout'; // Import the Checkout component
+import Checkout from './components/Checkout'; 
+
+//createContext
+export const cartandWishContext=createContext();
 
 const App = () => {
   const getInitialState = (key) => {
@@ -62,6 +65,7 @@ const App = () => {
 
   return (
     <>
+    <cartandWishContext.Provider value={{handleAddToWishList,handleAddToCart,search,wishList,setWishList,cartList,setCartList}}>
       <BrowserRouter>
         <Header
           setSearch={setSearch}
@@ -74,8 +78,9 @@ const App = () => {
               path="/"
               element={
                 <Home
-                  handleWishList={handleAddToWishList}
-                  handleAddToCart={handleAddToCart}
+                  // useContext is used
+                  // handleWishList={handleAddToWishList}
+                  // handleAddToCart={handleAddToCart}
                 />
               }
             />
@@ -83,24 +88,32 @@ const App = () => {
               path="/product"
               element={
                 <Product
-                  handleWishList={handleAddToWishList}
-                  handleAddToCart={handleAddToCart}
-                  search={search}
+                  // useContext is used
+                  // handleWishList={handleAddToWishList}
+                  // handleAddToCart={handleAddToCart}
+                  // search={search}
                 />
               }
             />
             <Route
               path="/wishlist"
-              element={<WishList wishList={wishList} setWishList={setWishList} />}
+              element={<WishList
+                //  wishList={wishList}
+                //  setWishList={setWishList} 
+                 />}
             />
             <Route
               path="/cart"
-              element={<Cart cartList={cartList} setCartList={setCartList} />}
+              element={<Cart
+                //  cartList={cartList} 
+                //  setCartList={setCartList}
+                   />}
             />
             <Route path="/checkout" element={<Checkout />} />
           </Routes>
         </div>
       </BrowserRouter>
+      </cartandWishContext.Provider>
     </>
   );
 };

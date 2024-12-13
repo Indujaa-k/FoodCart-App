@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useContext } from 'react'
 import data from '../assert/products.json';
 import { FiShoppingBag } from "react-icons/fi";
 import { IoIosHeartEmpty } from "react-icons/io";
@@ -7,11 +7,11 @@ import { Link } from 'react-router-dom';
 import oreo from '../assert/img/oreo.png';
 import strawberry from '../assert/img/strawberry.png';
 import delivery from '../assert/img/delivery.png'
+import { cartandWishContext } from '../App';
 
+const Home = () => {
 
-
-const Home = ({ handleWishList,
-  handleAddToCart }) => {
+  const {handleAddToWishList,handleAddToCart}=useContext(cartandWishContext)
   const [randomValue, setRandomValue] = useState([])
   useEffect(() => {
     setRandomValue([...data].sort(() => Math.random() - 0.5).slice(0, 8));
@@ -65,7 +65,7 @@ const Home = ({ handleWishList,
           </div>
         </div>
 
-       
+        
       </div>
 
       {/* popular items */}
@@ -82,7 +82,7 @@ const Home = ({ handleWishList,
             <div className="popular-items-lists-details-wish">
               <IoIosHeartEmpty
                 className="popular-items-lists-icon"
-                onClick={() => handleWishList(item)}
+                onClick={() =>handleAddToWishList(item)}
               />
             </div>
             <div className="popular-items-lists-cart">

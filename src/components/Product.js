@@ -1,9 +1,12 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import data from '../assert/products.json';
 import { ProductItems } from './ProductItems';
+import { cartandWishContext } from '../App';
+//{ handleWishList, handleAddToCart,search }
 
-const Product = ({ handleWishList, handleAddToCart,search }) => {
+const Product = () => {
   
+   const {search}=useContext(cartandWishContext)
   const [productMap] = useState(data);
 
   const filterItems= productMap.filter((items)=>(
@@ -16,8 +19,8 @@ const Product = ({ handleWishList, handleAddToCart,search }) => {
         <ProductItems
           key={item.id}
           item={item}
-          handleWishList={handleWishList}
-          handleAddToCart={handleAddToCart}
+          // handleWishList={handleWishList}
+          // handleAddToCart={handleAddToCart}
           
         />
       ))}
