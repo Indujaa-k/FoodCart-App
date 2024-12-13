@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&family=Hachi+Maru+Pop&family=Yuji+Mai&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&family=Hachi+Maru+Pop&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Yuji+Mai&display=swap');
+
+.header {
+  background-color: $primary-color;
+  color: #fff;
+  font-family: "Hachi Maru Pop", cursive;
+  @include flex-row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+ z-index: 12;
+  a {
+    color: #fff;
+    text-decoration: none;
+    font-family: "Nunito", sans-serif;
+
+    &:hover {
+      color: white;
+      font-weight: bold;
+      text-decoration: underline;
+    }
+  }
+
+  .my-icon {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+
+  .my-icon-menu {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+  }
+
+  &-logo {
+    font-size: 35px;
+    font-weight: bolder;
+  }
+
+  input {
+    padding: 15px 10px;
+    border-radius: 20px;
+    border: none;
+    width: 300px;
+    outline: none;
+    box-shadow: 4px 4px 10px rgba(54, 152, 123, 0.4);
+    transition: box-shadow 0.3s ease;
+  }
+
+  &-menu {
+    display: none;
+  }
+
+  &-link {
+    @include flex-row;
+    gap: 30px;
+    font-size: 20px;
+  }
+
+  .menu-display-cart {
+    display: none;
+  }
+}
+
+.menu-exit {
+  position: absolute;
+  top: 10px;
+  right: 50px;
+  cursor: pointer;
+  z-index: 15;
+  color: white;
+}
+
+.my-icon-cross {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+
+}
+
+.menu-display {
+  position: fixed;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  background-color: #36987B;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  gap: 20px;
+  z-index: 100;
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+.menu-display.visible {
+  display: flex;
+
+}
+
+.menu-display-division {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.menu-display a {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+
+  &:hover {
+    color: white;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+}
+
+.cart-icon-container,.cart-icon-container {
+  position: relative;
+  display: flex;
+  align-items: flex-start ;
+  justify-content: center;
+}
+
+.wish_num,.cart_num {
+  position: absolute;
+  top: -10px;
+  right: -15px;
+  width: 13px;
+  height: 13px;
+  background-color: $heading-color;
+  color: white;
+  border-radius: 70%;
+  text-align: center;
+  font-size: 14px;
+  padding: 5px;
+  z-index: 10;
+}
+
+

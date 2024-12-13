@@ -1,0 +1,242 @@
+[
+  {
+    "id": 8,
+    "name": "Rainbow Ice Cream",
+    "amt": 581,
+    "shop": "CraveCart",
+    "ftype": "Ice Cream, Dessert, Frozen",
+    "pic": "ice-4.jpg"
+  },
+  {
+    "id": 1,
+    "name": "Chocolate Cake",
+    "amt": 1742,
+    "shop": "CraveCart",
+    "ftype": "Cake, Dessert, Chocolate",
+    "pic": "cake-1.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Pan Pizza ",
+    "amt": 1087,
+    "shop": "CraveCart",
+    "ftype": "Pizza, Italian Food, Fast Food",
+    "pic": "pizza.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Double Layer Cake",
+    "amt": 2167,
+    "shop": "CraveCart",
+    "ftype": "Cake, Dessert, Birthday Cake",
+    "pic": "cake-3.jpg"
+  },
+  {
+    "id": 10,
+    "name": "veg Sandwich",
+    "amt": 498,
+    "shop": "CraveCart",
+    "ftype": "Sandwich, Fast Food, Quick Meal",
+    "pic": "sandwich.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Blueberry Cake",
+    "amt": 2079,
+    "shop": "CraveCart",
+    "ftype": "Cake, Berry Dessert, Sweet",
+    "pic": "cake-4.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Vanilla Ice Cream",
+    "amt": 414,
+    "shop": "CraveCart",
+    "ftype": "Ice Cream, Dessert, Frozen",
+    "pic": "ice-1.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Strawberry Cake",
+    "amt": 1919,
+    "shop": "CraveCart",
+    "ftype": "Cake, Berry Dessert, Sweet",
+    "pic": "cake-2.jpg"
+  },
+  {
+    "id": 6,
+    "name": "StrawberryCream",
+    "amt": 455,
+    "shop": "CraveCart",
+    "ftype": "Ice Cream, Dessert, Frozen",
+    "pic": "ice-2.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Macaroni Pasta",
+    "amt": 748,
+    "shop": "CraveCart",
+    "ftype": "Pasta, Italian Food, Cheese",
+    "pic": "mac.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Vanilla with Choco",
+    "amt": 539,
+    "shop": "CraveCart",
+    "ftype": "Ice Cream, Dessert, Frozen",
+    "pic": "ice-3.jpg"
+  },
+  {
+    "id": 11,
+    "name": "Cheese Bread",
+    "amt": 539,
+    "shop": "CraveCart",
+    "ftype": "Bread, Cheese, Baked",
+    "pic": "cheesebread.jpg"
+  },
+  {
+    "id": 13,
+    "name": "Fried Rice",
+    "amt": 629,
+    "shop": "CraveCart",
+    "ftype": "Rice, Chinese Food, Fried",
+    "pic": "friedrice.jpg"
+  },
+  {
+    "id": 14,
+    "name": "Idly with Sambar",
+    "amt": 220,
+    "shop": "CraveCart",
+    "ftype": "South Indian, Breakfast, Steamed",
+    "pic": "idly.jpg"
+  },
+  {
+    "id": 15,
+    "name": "Choco Milkshake",
+    "amt": 299,
+    "shop": "CraveCart",
+    "ftype": "Beverages, Drink, Creamy",
+    "pic": "milkshake.jpg"
+  },
+  {
+    "id": 16,
+    "name": "Pani Puri",
+    "amt": 120,
+    "shop": "CraveCart",
+    "ftype": "Indian Snack, Chaat, Street Food",
+    "pic": "panipuri.jpg"
+  },
+  {
+    "id": 17,
+    "name": "Starbucks Coffee",
+    "amt": 899,
+    "shop": "CraveCart",
+    "ftype": "Beverages, Coffee, Drink",
+    "pic": "starbucks.jpg"
+  },
+  {
+    "id": 18,
+    "name": "Chicken burger",
+    "amt": 899,
+    "shop": "CraveCart",
+    "ftype": "Fast Food, Burger, Meal",
+    "pic": "mcdonalds.jpg"
+  },
+  {
+    "id": 19,
+    "name": "Domino's Pizza",
+    "amt": 1099,
+    "shop": "CraveCart",
+    "ftype": "Pizza, Fast Food, Cheese",
+    "pic": "dominospizza.jpg"
+  },
+  {
+    "id": 20,
+    "name": "Madurai Jigarthanda",
+    "amt": 299,
+    "shop": "CraveCart",
+    "ftype": "Indian Dessert, Drink, Sweet",
+    "pic": "jigarthanda.jpg"
+  },
+  {
+    "id": 21,
+    "name": "Taco Bell",
+    "amt": 799,
+    "shop": "CraveCart",
+    "ftype": "Mexican Food, Tacos, Burritos",
+    "pic": "tacobell.jpg"
+  },
+  {
+    "id": 22,
+    "name": "Chicken Curry",
+    "amt": 649,
+    "shop": "CraveCart",
+    "ftype": "Indian Food, Curry, Chicken",
+    "pic": "chickencurry.jpg"
+  },
+  {
+    "id": 23,
+    "name": "KFC Chicken",
+    "amt": 899,
+    "shop": "CraveCart",
+    "ftype": "Fast Food, Fried Chicken, Meal",
+    "pic": "kfcchicken.jpg"
+  },
+  {
+    "id": 24,
+    "name": "Veg Momos",
+    "amt": 349,
+    "shop": "CraveCart",
+    "ftype": "Dumplings, Snack, Asian Food",
+    "pic": "momos.jpg"
+  },
+  {
+    "id": 25,
+    "name": "Fruit Juice",
+    "amt": 199,
+    "shop": "CraveCart",
+    "ftype": "Drinks, Refreshing, Juices",
+    "pic": "beverages.jpg"
+  },
+  {
+    "id": 26,
+    "name": "Masala Tea",
+    "amt": 100,
+    "shop": "CraveCart",
+    "ftype": "Hot Drink, Beverage, Chai",
+    "pic": "tea.jpg"
+  },
+  {
+    "id": 27,
+    "name": "RedSauce Pasta ",
+    "amt": 799,
+    "shop": "CraveCart",
+    "ftype": "Pasta, Italian Food, Cheesy",
+    "pic": "pasta.jpg"
+  },
+  {
+    "id": 28,
+    "name": "Chicken Biriyani",
+    "amt": 899,
+    "shop": "CraveCart",
+    "ftype": "Indian Food, Rice, Spicy",
+    "pic": "biriyani.jpg"
+  },
+  {
+    "id": 29,
+    "name": "Masala Dosa",
+    "amt": 150,
+    "shop": "CraveCart",
+    "ftype": "South Indian, Breakfast, Crispy",
+    "pic": "dosa.jpg"
+  },
+  {
+    "id": 30,
+    "name": "French Fries",
+    "amt": 399,
+    "shop": "CraveCart",
+    "ftype": "Snack, Fast Food, Potatoes",
+    "pic": "frenchfries.jpg"
+  }
+]
